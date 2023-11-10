@@ -10,7 +10,7 @@ class OAI_Agent():
         self.assistant_id = None
         self.client = AsyncOpenAI(api_key=api_key, organization=organization_id)
         self.json_file = 'thread_data.json'
-        self.assistant_file="assistant_data.json"
+        self.assistant_file= 'assistant_data.json'
         
     async def get_json_file(self):
         return self.json_file
